@@ -83,32 +83,44 @@ let s:p = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual':
 
 " Tabline
 let s:p.tabline.left    = [ [ s:lfc.white, s:lfc.bg_subtle ] ]
-let s:p.tabline.tabsel  = [ [ s:lfc.bg_subtle, s:lfc.blue ] ]
+"let s:p.tabline.tabsel  = [ [ s:lfc.bg_subtle, s:lfc.blue ] ]
+let s:p.tabline.tabsel  = [ [ s:lfc.bg_subtle, s:lfc.cyan ] ]
 let s:p.tabline.middle  = [ [ s:lfc.white, s:lfc.bg_subtle ] ]
-let s:p.tabline.right   = [ [ s:lfc.bg_subtle, s:lfc.red ] ]
+"let s:p.tabline.right   = [ [ s:lfc.bg_subtle, s:lfc.red ] ]
+let s:p.tabline.right   = [ [ s:lfc.bg_subtle, s:lfc.bg_subtle ] ]
 
 " Normal mode
-let s:p.normal.left     = [ [ s:lfc.bg_subtle, s:lfc.cyan ],  [ s:lfc.bg_subtle, s:lfc.dark_cyan ] ]
+"let s:p.normal.left     = [ [ s:lfc.bg_subtle, s:lfc.cyan ],  [ s:lfc.bg_subtle, s:lfc.dark_cyan ] ]
+let s:p.normal.left     = [ [ s:lfc.bg_subtle, s:lfc.blue ],  [ s:lfc.bg_subtle, s:lfc.dark_blue ] ]
 let s:p.normal.middle   = [ [ s:lfc.white, s:lfc.bg_subtle ] ]
-let s:p.normal.right    = [ [ s:lfc.bg_subtle, s:lfc.cyan ],  [ s:lfc.bg_subtle, s:lfc.dark_cyan ] ]
+"let s:p.normal.right    = [ [ s:lfc.bg_subtle, s:lfc.cyan ],  [ s:lfc.bg_subtle, s:lfc.dark_cyan ] ]
+let s:p.normal.right    = [ [ s:lfc.bg_subtle, s:lfc.blue ],  [ s:lfc.bg_subtle, s:lfc.dark_blue ] ]
 let s:p.normal.error    = [ [ s:lfc.red, s:lfc.bg_subtle ] ]
 let s:p.normal.warning  = [ [ s:lfc.yellow, s:lfc.bg_subtle ] ]
 
 " Visual mode
-let s:p.visual.left     = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtle, s:lfc.dark_yellow ] ]
-let s:p.visual.right    = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtle, s:lfc.dark_yellow ] ]
+"let s:p.visual.left     = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtle, s:lfc.dark_yellow ] ]
+let s:p.visual.left     = [ [ s:lfc.bg_subtle, s:lfc.green ],  [ s:lfc.bg_subtle, s:lfc.dark_green ] ]
+"let s:p.visual.right    = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtle, s:lfc.dark_yellow ] ]
+let s:p.visual.right    = [ [ s:lfc.bg_subtle, s:lfc.green ],  [ s:lfc.bg_subtle, s:lfc.dark_green ] ]
 
 " Replace mode
-let s:p.replace.left    = [ [ s:lfc.bg_subtle, s:lfc.green ],  [ s:lfc.bg_subtle, s:lfc.dark_green ] ]
-let s:p.replace.right   = [ [ s:lfc.bg_subtle, s:lfc.green ],  [ s:lfc.bg_subtle, s:lfc.dark_green ] ]
+"let s:p.replace.left    = [ [ s:lfc.bg_subtle, s:lfc.green ],  [ s:lfc.bg_subtle, s:lfc.dark_green ] ]
+let s:p.replace.left    = [ [ s:lfc.bg_subtle, s:lfc.red ],  [ s:lfc.bg_subtle, s:lfc.dark_red ] ]
+"let s:p.replace.right   = [ [ s:lfc.bg_subtle, s:lfc.green ],  [ s:lfc.bg_subtle, s:lfc.dark_green ] ]
+let s:p.replace.right   = [ [ s:lfc.bg_subtle, s:lfc.red ],  [ s:lfc.bg_subtle, s:lfc.dark_red ] ]
 
 " Insert mode
-let s:p.insert.left     = [ [ s:lfc.bg_subtle, s:lfc.red ],  [ s:lfc.bg_subtle, s:lfc.dark_red ] ]
-let s:p.insert.right    = [ [ s:lfc.bg_subtle, s:lfc.red ],  [ s:lfc.bg_subtle, s:lfc.dark_red ] ]
+"let s:p.insert.left     = [ [ s:lfc.bg_subtle, s:lfc.red ],  [ s:lfc.bg_subtle, s:lfc.dark_red ] ]
+let s:p.insert.left     = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtle, s:lfc.dark_yellow ] ]
+"let s:p.insert.right    = [ [ s:lfc.bg_subtle, s:lfc.red ],  [ s:lfc.bg_subtle, s:lfc.dark_red ] ]
+let s:p.insert.right    = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtle, s:lfc.dark_yellow ] ]
 
 " Inactive split
-let s:p.inactive.left   = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ], [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
+"let s:p.inactive.left   = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ], [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
+let s:p.inactive.left   = [ [ s:lfc.bg_subtle, s:lfc.purple ], [ s:lfc.bg_subtle, s:lfc.purple ] ]
 let s:p.inactive.middle = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
-let s:p.inactive.right  = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ], [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
+"let s:p.inactive.right  = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ], [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
+let s:p.inactive.right  = [ [ s:lfc.bg_subtle, s:lfc.purple ], [ s:lfc.bg_subtle, s:lfc.purple ] ]
 
 let g:lightline#colorscheme#challenger_deep#palette = lightline#colorscheme#flatten(s:p)

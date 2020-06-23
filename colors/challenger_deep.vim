@@ -159,12 +159,14 @@ call s:h("Float",    {"fg": s:dark_yellow})
 call s:h("NonText",       {"fg": s:bg_dark})
 call s:h("Directory",     {"fg": s:purple})
 call s:h("ErrorMsg",      {"fg": s:dark_red})
-call s:h("IncSearch",     {"bg": s:red, "fg": s:clouds})
+"call s:h("IncSearch",     {"bg": s:red, "fg": s:clouds})
+call s:h("IncSearch",     {"bg": s:norm_subtle, "fg": s:bg_subtle})
 call s:h("Search",        {"bg": s:bg_dark})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "gui": "bold", "cterm": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:dark_asphalt, "bg": s:bg_subtle})
-call s:h("CursorLineNr",  {"bg": s:bg_subtle, "fg": s:blue, "gui": "bold"})
+"call s:h("CursorLineNr",  {"bg": s:bg_subtle, "fg": s:blue, "gui": "bold"})
+call s:h("CursorLineNr",  {"bg": s:bg_subtle, "fg": s:green, "gui": "bold"})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_dark})
 call s:h("Conceal",       {"fg": s:norm})
@@ -174,7 +176,8 @@ call s:h("Title",         {"fg": s:dark_blue})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("WarningMsg",    {"fg": s:yellow})
 call s:h("WildMenu",      {"fg": s:bg_subtle, "bg": s:cyan})
-call s:h("Folded",        {"bg": s:purple, "fg": s:bg_subtle})
+"call s:h("Folded",        {"bg": s:purple, "fg": s:bg_subtle})
+call s:h("Folded",        {"bg": s:bg_subtle, "fg": s:blue})
 call s:h("FoldColumn",    {"fg": s:yellow})
 call s:h("DiffAdd",       {"fg": s:green})
 call s:h("DiffDelete",    {"fg": s:red})
@@ -315,6 +318,29 @@ call s:h("GitGutterDelete",{"fg": s:red, "bg": s:bg_subtle})
 call s:h("GitGutterChange",{"fg": s:yellow, "bg": s:bg_subtle})
 call s:h("GitGutterChangeDelete",{"fg": s:red, "bg": s:bg_subtle})
 
+" by IMOKURI
+if has('nvim')
+    call s:h("ActiveWindow",   {"fg": s:norm, "bg": s:bg})
+    call s:h("InactiveWindow", {"fg": s:norm, "bg": s:bg_subtle})
+    set winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
+endif
+
+call s:h("NormalFloat",{"fg": s:norm, "bg": s:bg})
+
+call s:h("ALEError",   {"fg": s:dark_red,    "bg": s:bg_subtle})
+call s:h("ALEWarning", {"fg": s:dark_yellow, "bg": s:bg_subtle})
+
+if has('nvim-0.3.2')
+    call s:h("ALEErrorSignLineNr",        {"fg": s:dark_red,    "bg": s:bg_subtle})
+    call s:h("ALEStyleErrorSignLineNr",   {"fg": s:dark_red,    "bg": s:bg_subtle})
+    call s:h("ALEWarningSignLineNr",      {"fg": s:dark_yellow, "bg": s:bg_subtle})
+    call s:h("ALEStyleWarningSignLineNr", {"fg": s:dark_yellow, "bg": s:bg_subtle})
+endif
+
+call s:h('DimLineNr',         {'bg': s:bg_subtle, 'fg': s:dark_asphalt})
+call s:h('HighlightedLineNr', {'bg': s:bg_subtle, 'fg': s:blue})
+
+call s:h("YankRoundRegion", {"bg": s:norm_subtle, "fg": s:bg_subtle})
 
 "nvim terminal colors
 let g:terminal_color_0 = s:bg_dark.gui
