@@ -118,9 +118,9 @@ let s:p.insert.right    = [ [ s:lfc.bg_subtle, s:lfc.yellow ],  [ s:lfc.bg_subtl
 
 " Inactive split
 "let s:p.inactive.left   = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ], [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
-let s:p.inactive.left   = [ [ s:lfc.bg_subtle, s:lfc.purple ], [ s:lfc.bg_subtle, s:lfc.purple ] ]
+let s:p.inactive.left   = [ [ s:lfc.bg_subtle, s:lfc.purple ], [ s:lfc.bg_subtle, s:lfc.dark_purple ] ]
 let s:p.inactive.middle = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
 "let s:p.inactive.right  = [ [ s:lfc.dark_asphalt, s:lfc.bg_subtle ], [ s:lfc.dark_asphalt, s:lfc.bg_subtle ] ]
-let s:p.inactive.right  = [ [ s:lfc.bg_subtle, s:lfc.purple ], [ s:lfc.bg_subtle, s:lfc.purple ] ]
+let s:p.inactive.right  = [ [ s:lfc.bg_subtle, s:lfc.purple ], [ s:lfc.bg_subtle, s:lfc.dark_purple ] ]
 
 let g:lightline#colorscheme#challenger_deep#palette = lightline#colorscheme#flatten(s:p)
