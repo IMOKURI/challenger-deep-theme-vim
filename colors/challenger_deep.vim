@@ -327,16 +327,6 @@ endif
 
 call s:h("NormalFloat",{"fg": s:norm, "bg": s:bg})
 
-call s:h("ALEError",   {"fg": s:dark_red,    "bg": s:bg_subtle})
-call s:h("ALEWarning", {"fg": s:dark_yellow, "bg": s:bg_subtle})
-
-if has('nvim-0.3.2')
-    call s:h("ALEErrorSignLineNr",        {"fg": s:dark_red,    "bg": s:bg_subtle})
-    call s:h("ALEStyleErrorSignLineNr",   {"fg": s:dark_red,    "bg": s:bg_subtle})
-    call s:h("ALEWarningSignLineNr",      {"fg": s:dark_yellow, "bg": s:bg_subtle})
-    call s:h("ALEStyleWarningSignLineNr", {"fg": s:dark_yellow, "bg": s:bg_subtle})
-endif
-
 call s:h('DimLineNr',         {'bg': s:bg_subtle, 'fg': s:dark_asphalt})
 call s:h('HighlightedLineNr', {'bg': s:bg_subtle, 'fg': s:blue})
 
