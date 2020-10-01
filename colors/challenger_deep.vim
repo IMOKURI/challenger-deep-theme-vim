@@ -332,6 +332,43 @@ call s:h('HighlightedLineNr', {'bg': s:bg_subtle, 'fg': s:blue})
 
 call s:h("YankRoundRegion", {"bg": s:norm_subtle, "fg": s:bg_subtle})
 
+"express_line.nvim
+call s:h("ElNormal",                {"bg": s:blue,        "fg": s:bg_subtle})
+call s:h("ElNormalOperatorPending", {"bg": s:dark_blue,   "fg": s:bg_subtle})
+call s:h("ElVisual",                {"bg": s:green,       "fg": s:bg_subtle})
+call s:h("ElVisualLine",            {"bg": s:green,       "fg": s:bg_subtle})
+call s:h("ElVisualBlock",           {"bg": s:green,       "fg": s:bg_subtle})
+call s:h("ElSelect",                {"bg": s:dark_green,  "fg": s:bg_subtle})
+call s:h("ElSLine",                 {"bg": s:dark_green,  "fg": s:bg_subtle})
+call s:h("ElSBlock",                {"bg": s:dark_green,  "fg": s:bg_subtle})
+call s:h("ElInsert",                {"bg": s:yellow,      "fg": s:bg_subtle})
+call s:h("ElInsertCompletion",      {"bg": s:dark_yellow, "fg": s:bg_subtle})
+call s:h("ElReplace",               {"bg": s:red,         "fg": s:bg_subtle})
+call s:h("ElVirtualReplace",        {"bg": s:dark_red,    "fg": s:bg_subtle})
+call s:h("ElCommand",               {"bg": s:cyan,        "fg": s:bg_subtle})
+call s:h("ElCommandCV",             {"bg": s:dark_cyan,   "fg": s:bg_subtle})
+call s:h("ElCommandEx",             {"bg": s:dark_cyan,   "fg": s:bg_subtle})
+call s:h("ElTerm",                  {"bg": s:purple,      "fg": s:bg_subtle})
+call s:h("ElShell",                 {"bg": s:dark_purple, "fg": s:bg_subtle})
+
+" call s:h("ElNormalInactive",                {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElNormalOperatorPendingInactive", {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElVisualInactive",                {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElVisualLineInactive",            {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElVisualBlockInactive",           {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElSelectInactive",                {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElSLineInactive",                 {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElSBlockInactive",                {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElInsertInactive",                {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElInsertCompletionInactive",      {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElReplaceInactive",               {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElVirtualReplaceInactive",        {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElCommandInactive",               {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElCommandCVInactive",             {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElCommandExInactive",             {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElTermInactive",                  {"bg": s:bg_dark, "fg": s:medium_gray})
+" call s:h("ElShellInactive",                 {"bg": s:bg_dark, "fg": s:medium_gray})
+
 "nvim terminal colors
 let g:terminal_color_0 = s:bg_dark.gui
 let g:terminal_color_1 = s:red.gui
