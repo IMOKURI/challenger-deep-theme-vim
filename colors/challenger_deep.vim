@@ -137,7 +137,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h("Special",       {"fg": s:cyan})
+call s:h("Special",       {"fg": s:green})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
