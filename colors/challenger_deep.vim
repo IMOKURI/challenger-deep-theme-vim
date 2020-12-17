@@ -341,6 +341,10 @@ call s:h("rainbowcol5", {"fg": s:red,         "bg": s:bg})
 call s:h("rainbowcol6", {"fg": s:dark_yellow, "bg": s:bg})
 call s:h("rainbowcol7", {"fg": s:yellow,      "bg": s:bg})
 
+"telescope
+call s:h("TelescopeMatching",     {"fg": s:dark_yellow, "bg": s:bg})
+call s:h("TelescopePromptPrefix", {"fg": s:blue,        "bg": s:bg})
+
 "express_line.nvim
 call s:h("ElNormal",                {"bg": s:blue,        "fg": s:bg_subtle})
 call s:h("ElNormalOperatorPending", {"bg": s:dark_blue,   "fg": s:bg_subtle})
