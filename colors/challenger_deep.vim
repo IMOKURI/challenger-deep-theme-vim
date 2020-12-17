@@ -332,6 +332,15 @@ call s:h('HighlightedLineNr', {'bg': s:bg_subtle, 'fg': s:blue})
 
 call s:h("YankRoundRegion", {"bg": s:norm_subtle, "fg": s:bg_subtle})
 
+"nvim-ts-rainbow
+call s:h("rainbowcol1", {"fg": s:green,       "bg": s:bg})
+call s:h("rainbowcol2", {"fg": s:cyan,        "bg": s:bg})
+call s:h("rainbowcol3", {"fg": s:blue,        "bg": s:bg})
+call s:h("rainbowcol4", {"fg": s:purple,      "bg": s:bg})
+call s:h("rainbowcol5", {"fg": s:red,         "bg": s:bg})
+call s:h("rainbowcol6", {"fg": s:dark_yellow, "bg": s:bg})
+call s:h("rainbowcol7", {"fg": s:yellow,      "bg": s:bg})
+
 "express_line.nvim
 call s:h("ElNormal",                {"bg": s:blue,        "fg": s:bg_subtle})
 call s:h("ElNormalOperatorPending", {"bg": s:dark_blue,   "fg": s:bg_subtle})
